@@ -12,8 +12,10 @@ namespace FizzBuzz
 
         }
 
-        public string FizzBuzz (int num)
+        public string FizzBuzz(int num)
         {
+            if (num % 3 == 0)
+                return "Fizz";
             return num.ToString();
         }
     }
