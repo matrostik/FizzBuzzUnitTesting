@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using FizzBuzz;
 
 namespace FizzBuzzTests
 {
@@ -9,7 +10,10 @@ namespace FizzBuzzTests
         [TestMethod]
         public void TestMethod()
         {
-            Assert.AreEqual<int>(0, 0);
+            var test_object = new Program();
+            int expected = 1;
+            int actual = test_object.FizzBuzz(1);
+            Assert.AreEqual<int>(expected, actual);
         }
     }
 }
