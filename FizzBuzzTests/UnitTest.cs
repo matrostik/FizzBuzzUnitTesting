@@ -34,5 +34,12 @@ namespace FizzBuzzTests
             string actual = FizzBuzz(3);
             Assert.AreEqual<string>("Fizz", actual);
         }
+
+        [TestMethod]
+        public void TestMethod3()
+        {
+            string actual = FizzBuzz(5);
+            Assert.AreEqual<string>("Buzz", actual);
+        }
     }
 }
