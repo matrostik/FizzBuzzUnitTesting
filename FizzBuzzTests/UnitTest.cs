@@ -7,12 +7,26 @@ namespace FizzBuzzTests
     [TestClass]
     public class UnitTest
     {
-        [TestMethod]
-        public void TestMethod()
+        private Program _prog = new Program();
+        public Program Prog
         {
-            var test_object = new Program();
+            get { return _prog; }
+            set { _prog = value; }
+        }
+
+        [TestMethod]
+        public void TestMethod1()
+        {
             int expected = 1;
-            int actual = test_object.FizzBuzz(1);
+            int actual = Prog.FizzBuzz(1);
+            Assert.AreEqual<int>(expected, actual);
+        }
+
+        [TestMethod]
+        public void TestMethod2()
+        {
+            int expected = 2;
+            int actual = Prog.FizzBuzz(2);
             Assert.AreEqual<int>(expected, actual);
         }
     }
