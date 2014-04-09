@@ -9,6 +9,7 @@ namespace FizzBuzzTests
         [TestMethod]
         public void TestMethod()
         {
+            Assert.Fail();
         }
     }
 }
