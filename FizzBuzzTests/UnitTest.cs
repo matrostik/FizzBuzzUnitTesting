@@ -17,17 +17,16 @@ namespace FizzBuzzTests
         [TestMethod]
         public void TestMethod1()
         {
-            int expected = 1;
-            int actual = Prog.FizzBuzz(1);
-            Assert.AreEqual<int>(expected, actual);
+            
+            string actual = Prog.FizzBuzz(1);
+            Assert.AreEqual<string>("1", actual);
         }
 
         [TestMethod]
         public void TestMethod2()
         {
-            int expected = 2;
-            int actual = Prog.FizzBuzz(2);
-            Assert.AreEqual<int>(expected, actual);
+            string actual = Prog.FizzBuzz(3);
+            Assert.AreEqual<string>("Fizz", actual);
         }
     }
 }
